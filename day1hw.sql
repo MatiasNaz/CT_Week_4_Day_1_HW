@@ -26,17 +26,23 @@ WHERE last_name = 'William';
 
 -- 5. What store employee (get the id) sold the most rentals?
 
-SELECT employee
+SELECT staff_id, rentals
+FROM staff
+WHERE max(amount);
 
 
 -- 6. How many different district names are there?
 
-
+SELECT COUNT(amount)
+FROM district
+WHERE COUNT(amount) > 5;
 
 
 -- 7. What film has the most actors in it? (use film_actor table and get film_id)
 
-
+SELECT COUNT(film_actor) get film_id
+FROM film
+WHERE COUNT(max(amount));
 
 
 -- 8. From store_id 1, how many customers have a last name ending with ‘es’? (use customer table)
