@@ -47,7 +47,9 @@ WHERE COUNT(max(amount));
 
 -- 8. From store_id 1, how many customers have a last name ending with ‘es’? (use customer table)
 
-
+SELECT customer
+FROM store_id 1
+WHERE last_name LIKE 'J__%es';
 
 
 
