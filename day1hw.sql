@@ -64,3 +64,8 @@ HAVING id between 380 and 430;
 
 -- 10. Within the film table, how many rating categories are there? And what rating has the most
 -- movies total?
+
+SELECT categories(amount), rating
+FROM film
+WHERE rating
+HAVING max(amount);
